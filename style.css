@@ -1,29 +1,192 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-    font-family: sans-serif;
-    max-width:400px;
+    background:#f2f4f7;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    color:#333;
+}
+
+.container{
+    max-width:480px;
     margin:auto;
-    padding:20px;
+    padding:20px 15px 40px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    font-size:28px;
+    color:#009944;
+}
+
+.card{
+    background:#ffffff;
+    border-radius:15px;
+    padding:18px;
+    margin-bottom:18px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
 }
 
 h2{
-    text-align:center;
+    margin-bottom:15px;
+    color:#009944;
+    font-size:20px;
 }
 
-.money{
+.row{
     display:flex;
     justify-content:space-between;
-    margin:10px 0;
+    align-items:center;
+    margin:12px 0;
 }
 
-input{
-    width:80px;
-    padding:8px;
+.row label{
     font-size:18px;
+    font-weight:500;
 }
 
-button{
+.row input{
+
+    width:90px;
+
+    height:42px;
+
+    font-size:20px;
+
+    text-align:center;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+}
+
+.calc-btn{
+
     width:100%;
-    margin-top:20px;
-    padding:15px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#009944;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    margin-bottom:20px;
+
+}
+
+.calc-btn:hover{
+
+    background:#007d38;
+
+}
+
+.result-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:12px 0;
+
+    font-size:20px;
+
+}
+
+.result-row strong{
+
+    color:#009944;
+
+}
+
+#lack{
+
+    line-height:1.8;
+
     font-size:18px;
+
+}
+
+#exchange{
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+#result{
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+.success{
+
+    color:#009944;
+
+    font-weight:bold;
+
+}
+
+.warning{
+
+    color:#e53935;
+
+    font-weight:bold;
+
+}
+
+.info{
+
+    color:#1976d2;
+
+    font-weight:bold;
+
+}
+
+@media (max-width:420px){
+
+    h1{
+
+        font-size:24px;
+
+    }
+
+    h2{
+
+        font-size:18px;
+
+    }
+
+    .row label{
+
+        font-size:16px;
+
+    }
+
+    .row input{
+
+        width:80px;
+
+        font-size:18px;
+
+    }
+
 }
