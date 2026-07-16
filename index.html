@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,53 +8,124 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h2>💰 올리브영 시재 계산기</h2>
+<div class="container">
 
-<div class="money">
-    <label>50000원</label>
-    <input type="number" id="50000" value="0">
+    <h1>💰 올리브영 시재 계산기</h1>
+
+    <div class="card">
+
+        <h2>현재 금고</h2>
+
+        <div class="row">
+            <label>50,000원</label>
+            <input id="50000" type="number" min="0" value="0">
+        </div>
+
+        <div class="row">
+            <label>10,000원</label>
+            <input id="10000" type="number" min="0" value="0">
+        </div>
+
+        <div class="row">
+            <label>5,000원</label>
+            <input id="5000" type="number" min="0" value="0">
+        </div>
+
+        <div class="row">
+            <label>1,000원</label>
+            <input id="1000" type="number" min="0" value="0">
+        </div>
+
+        <div class="row">
+            <label>500원</label>
+            <input id="500" type="number" min="0" value="0">
+        </div>
+
+        <div class="row">
+            <label>100원</label>
+            <input id="100" type="number" min="0" value="0">
+        </div>
+
+        <div class="row">
+            <label>50원</label>
+            <input id="50" type="number" min="0" value="0">
+        </div>
+
+        <div class="row">
+            <label>10원</label>
+            <input id="10" type="number" min="0" value="0">
+        </div>
+
+    </div>
+
+    <button class="calc-btn" onclick="calculate()">
+        계산하기
+    </button>
+
+    <div class="card">
+
+        <h2>계산 결과</h2>
+
+        <div class="result-row">
+            <span>총액</span>
+            <strong id="total">0원</strong>
+        </div>
+
+        <div class="result-row">
+            <span>입금액</span>
+            <strong id="deposit">0원</strong>
+        </div>
+
+        <div class="result-row">
+            <span>남길 시재</span>
+            <strong>83,000원</strong>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>부족한 시재</h2>
+
+        <div id="lack">
+
+            계산 버튼을 눌러주세요.
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>환전 추천</h2>
+
+        <div id="exchange">
+
+            계산 버튼을 눌러주세요.
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>최종 시재</h2>
+
+        <div id="result">
+
+            계산 버튼을 눌러주세요.
+
+        </div>
+
+    </div>
+
 </div>
-
-<div class="money">
-    <label>10000원</label>
-    <input type="number" id="10000" value="0">
-</div>
-
-<div class="money">
-    <label>5000원</label>
-    <input type="number" id="5000" value="0">
-</div>
-
-<div class="money">
-    <label>1000원</label>
-    <input type="number" id="1000" value="0">
-</div>
-
-<div class="money">
-    <label>500원</label>
-    <input type="number" id="500" value="0">
-</div>
-
-<div class="money">
-    <label>100원</label>
-    <input type="number" id="100" value="0">
-</div>
-
-<div class="money">
-    <label>50원</label>
-    <input type="number" id="50" value="0">
-</div>
-
-<div class="money">
-    <label>10원</label>
-    <input type="number" id="10" value="0">
-</div>
-
-<button>계산하기</button>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
